@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Open Sans', sans-serif;
     background: #ececec;
@@ -9,7 +8,7 @@ body {
 
 img {
     max-width: 100%;
-    height:auto;
+    height: auto;
 }
 
 h3 {
@@ -35,28 +34,29 @@ h3 {
     text-transform: uppercase;
 }
 
-.menu-top .navbar-default .navbar-nav > li > a {
+.menu-top .navbar-default .navbar-nav>li>a {
     color: #000;
     padding-bottom: 5px;
     padding-top: 5px;
     transition: background .3s;
 }
 
-.menu-top .navbar-default .navbar-nav > li > a:hover {
+.menu-top .navbar-default .navbar-nav>li>a:hover {
     text-decoration: underline;
 }
-.menu-top .navbar-default .navbar-nav > li > a.btn-red {
+
+.menu-top .navbar-default .navbar-nav>li>a.btn-red {
     color: #fff;
     border-radius: 3px;
     padding: 5px 20px;
 }
 
-.menu-top .navbar-default .navbar-nav > li > a.btn-red:hover {
+.menu-top .navbar-default .navbar-nav>li>a.btn-red:hover {
     background: #ec4835;
     text-decoration: none;
 }
 
-.menu-top .navbar-default .navbar-nav > li > a > .glyphicon {
+.menu-top .navbar-default .navbar-nav>li>a>.glyphicon {
     margin-right: 10px;
     font-size: 17px;
 }
@@ -197,13 +197,13 @@ h3 {
     border-radius: 3px;
 }
 
-.main-menu .navbar-inverse .navbar-nav >li > a {
+.main-menu .navbar-inverse .navbar-nav>li>a {
     color: #fff;
     font-size: 16px;
     transition: background .5s;
 }
 
-.main-menu .navbar-inverse .navbar-nav >li > a:hover {
+.main-menu .navbar-inverse .navbar-nav>li>a:hover {
     text-decoration: underline;
 }
 
@@ -236,67 +236,135 @@ h3 {
     display: none;
 }
 
+/*-----------------CONTENT---------------------*/
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-	.menu-top .navbar-nav,
-	.main-menu .navbar-nav {
-	    float: none !important;
-	}
-	
-	.main-menu .navbar-form {
-	    background: rgba(0, 0, 0, 0.5);
-	    margin: 0;
-	    padding: 15px;
-	    position: absolute;
-	    right: 15px;
-	    display: none;
-	}
-	
-	.search {
-	    display: block;
-	}
+.main-slogan {
+    background: #fff;
+    text-align: center;
+    padding: 50px 0;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 3px solid #dadada;
 }
 
-@media only screen and (max-width : 1070px) {
-	.menu-carousel .carousel-caption {
+.main-slogan h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.sidebar {
+    padding: 50px 0 70px;
+    border-right: 3px solid #dadada;
+}
+
+.widget {
+    border-bottom: 3px solid #dadada;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.widget h3,
+.content h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.widget ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.widget ul li a {
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+}
+
+.widget ul li.more a {
+    color: #358acd;
+}
+
+.content {
+    padding: 50px 0 70px;
+}
+
+
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    .menu-top .navbar-nav,
+    .main-menu .navbar-nav {
+        float: none !important;
+    }
+
+    .main-menu .navbar-form {
+        background: rgba(0, 0, 0, 0.5);
+        margin: 0;
+        padding: 15px;
+        position: absolute;
+        right: 15px;
+        display: none;
+    }
+
+    .search {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .menu-carousel .carousel-caption {
         left: 20%;
     }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+
+@media only screen and (max-width: 992px) {
     .menu-carousel .carousel-caption {
         left: 20%;
     }
-    
+
     .menu-carousel .carousel-caption h1 {
         font-size: 40px;
     }
-    
+
     .menu-carousel .carousel-caption p {
         font-size: 22px;
     }
-    
-    .main-menu .navbar-inverse .navbar-nav >li > a {
-    font-size: 14px;
-}
+
+    .main-menu .navbar-inverse .navbar-nav>li>a {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        padding-bottom: 0;
+        padding-top: 0;
+        border-right: none;
+    }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	.main-menu .container {
-	    padding-left: 0;
-	    padding-right: 0;
-	}
+
+@media only screen and (max-width: 768px) {
+    .main-menu .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
-@media only screen and (max-width : 767px) {
-	.menu-top .navbar-default .navbar-nav > li > a:hover {
-	    background: #eee;
-	}
-	
-	.menu-top .container,
+@media only screen and (max-width: 767px) {
+    .menu-top .navbar-default .navbar-nav>li>a:hover {
+        background: #eee;
+    }
+
+    .menu-top .container,
     .menu-top .navbar-collapse {
         padding-left: 15px;
     }
@@ -304,60 +372,68 @@ h3 {
     .menu-carousel .carousel-caption h1 {
         font-size: 38px;
     }
-    
+
     .menu-carousel .carousel-caption p {
         font-size: 20px;
     }
-    
+
     .menu-carousel .carousel-caption .btn-red {
         padding: 10px 20px;
         font-size: 16px;
     }
-    
-    .main-menu .navbar-inverse .navbar-nav >li > a:hover {
-    text-decoration: none;
-    background: #222;
+
+    .main-menu .navbar-inverse .navbar-nav>li>a:hover {
+        text-decoration: none;
+        background: #222;
     }
-    
+
     .main-menu .navbar-form {
         margin: 8px 0;
     }
-    
+
     .main-menu .navbar-brand img {
         max-height: 50px;
     }
-    
-    .main-menu .navbar-toggle.collapsed + .navbar-brand img {
+
+    .main-menu .navbar-toggle.collapsed+.navbar-brand img {
         max-height: none;
         position: relative;
         z-index: 20;
     }
-    
+
     .search {
         display: none;
     }
-    
+
     .main-menu .navbar-form {
-	    display: block !important;
-	    position: relative;
-	    right: 0;
-	    background: transparent; 
-	}
+        display: block !important;
+        position: relative;
+        right: 0;
+        background: transparent;
+    }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+
+@media only screen and (max-width: 540px) {
+    .sidebar .col-xs-6 {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
     .menu-carousel .carousel-caption .btn-red {
         font-size: 14px;
     }
-    
-    .main-menu .navbar-toggle.collapsed + .navbar-brand img {
+
+    .main-menu .navbar-toggle.collapsed+.navbar-brand img {
         max-height: 80px;
     }
 }
 
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 1200px) {
     .main-menu .navbar-form {
-	    display: block !important;
-	}
+        display: block !important;
+    }
 }
